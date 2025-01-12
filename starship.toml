@@ -1,0 +1,13 @@
+# https://starship.rs/config/
+
+# Editor completions
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+
+[directory]
+truncation_length = 5
+truncation_symbol = "..."
+
+[hostname]
+ssh_only = false
+disabled = false
