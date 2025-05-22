@@ -1,24 +1,17 @@
--- RTFM:
+-- This file needs to have same structure as nvconfig.lua
 -- https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua
+-- Please read that file to know all available options :(
 
-local M = {
+---@type ChadrcConfig
+local M = {}
 
-  base46 = {
+M.base46 = {
     theme = "gatekeeper",
-    transparency = true,
-  },
 
-  statusline = {
-    enabled = true,
-    theme = "vscode_colored",
-
-  },
-
-  options = {
-    tabstop = 4,
-    shiftWidth = 4,
-    expandtab = true,
-  },
+    -- hl_override = {
+    -- 	Comment = { italic = true },
+    -- 	["@comment"] = { italic = true },
+    -- },
 }
 
 return M
