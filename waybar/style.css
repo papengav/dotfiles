@@ -2,8 +2,7 @@
 @define-color background #1e222a;
 
 * {
-  font-size: 13px;
-  min-height: 0;
+  font-size: 20px;
 }
 
 #waybar {
@@ -51,10 +50,6 @@ button {
   color: @peach;
   border: 2px solid @surface1;
   border-radius: 0.75em;
-}
-
-#workspaces label {
-  font-size: 10px;
 }
 
 #workspaces button {
