@@ -2,142 +2,148 @@
 @define-color background #1e222a;
 
 * {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 #waybar {
-  background: rgba(0, 0, 0, 0.8);
-  border: none;
-  box-shadow: none;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    box-shadow: none;
 }
 
-#workspaces, #battery,  #stats, #connections, #clock, #custom-notification {
-  border: 1px solid @surface1;
-  border-radius: 10px;
-  background: @background;
-  color: @theme_text_color;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  padding: 5px;
-  margin: 5px 5px;
+#workspaces,
+#battery,
+#stats,
+#connections,
+#clock,
+#custom-notification {
+    border: 1px solid @surface1;
+    border-radius: 10px;
+    background: @background;
+    color: @theme_text_color;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    padding: 5px;
+    margin: 5px 5px;
 }
 
 tooltip {
-  background: @base;
-  border: 1px solid @blue;
+    background: @base;
+    border: 1px solid @blue;
 }
 
 tooltip label {
-  color: white;
+    color: white;
 }
 
 label:focus {
-  background-color: #000000;
+    background-color: #000000;
 }
 
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
-  border: none;
-  border-radius: 0;
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
 }
 
 #workspaces {
-  margin-left: 0.5em;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: @peach;
-  border: 2px solid @surface1;
-  border-radius: 0.75em;
+    margin-left: 0.5em;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: @peach;
+    border: 2px solid @surface1;
+    border-radius: 0.75em;
 }
 
 #workspaces button {
-  padding: 0em 0.1em;
-  margin: 0em 0.3em;
-  background-color: @surface0;
-  border-radius: 1em;
-  color: @text;
-  /* margin: 0.25em; */
+    padding: 0em 0.1em;
+    margin: 0em 0.3em;
+    background-color: @surface0;
+    border-radius: 1em;
+    color: @text;
+    /* margin: 0.25em; */
 }
 
 #workspaces button.active {
-  background-color: @surface2;
-  color: #ffffff;
+    background-color: @surface2;
+    color: #ffffff;
 }
 
 #workspaces button.urgent {
-  background-color: @red;
-  color: @text;
+    background-color: @red;
+    color: @text;
 }
 
 #workspaces button:hover {
-  /* color: @background; */
-  font-weight: 100;
-  background: @background;
+    /* color: @background; */
+    font-weight: 100;
+    background: @background;
 }
 
 /* Unique colors for modules */
 #cpu {
-  color: @red;
+    color: @red;
 }
 
 #memory {
-  color: @yellow;
+    color: @yellow;
 }
 
 #network {
-  color: @blue;
+    color: @blue;
 }
 
 #disk {
-  color: @sapphire;
+    color: @sapphire;
 }
 
 #pulseaudio {
-  color: @green;
+    color: @green;
 }
 
 #backlight {
-  color: @rosewater;
+    color: @rosewater;
 }
 
 #network.disconnected {
-  background-color: #f53c3c;
+    background-color: #f53c3c;
 }
 
 #temperature.critical {
-  background-color: #eb4d4b;
+    background-color: #eb4d4b;
 }
 
 #clock {
-  color: @text;
-  font-weight: 900;
+    color: @text;
+    font-weight: 900;
 }
 
 #battery {
-  color: white;
+    color: white;
 }
 
 #battery.warning {
-  color: @red;
+    color: @red;
 }
 
 #battery.critical {
-  color: @orange;
+    color: @orange;
 }
 
 #battery.charging {
-  color: yellow;
+    color: yellow;
 }
 
 #custom-notification {
-  font-family: "JetBrainsMonoNL-Regular";
-  color: @peach;
+    font-family: "JetBrainsMonoNL-Regular";
+    color: @peach;
 }
 
 @keyframes blink {
-to {
-  background-color: #ffffff;
-  color: #000000;
-}}
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}

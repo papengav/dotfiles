@@ -7,7 +7,6 @@
 //               __/ |
 {
   "include": ["~/.config/waybar/default-modules.jsonc"],
-  "output": ["eDP-1"],
   "layer": "top",
   "position": "top",
   "margin-top": 0,
@@ -19,6 +18,5 @@
     "group/stats",
     "group/connections",
     "clock",
-    "custom/notification"
   ]
 }
