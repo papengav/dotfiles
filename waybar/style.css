@@ -24,7 +24,7 @@ window#waybar {
 
 #workspaces button.active {
     color: @lavender;
-    background-color: @surface1;
+    background-color: @surface2;
 }
 
 #workspaces button:hover {
