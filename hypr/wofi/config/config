@@ -10,3 +10,4 @@ insensitive=true
 prompt=
 columns=1
 sort_order=alphabetical
+style=$HOME/.config/hypr/wofi/src/macchiato/style.css

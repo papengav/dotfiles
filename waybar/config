@@ -1,22 +1,45 @@
-//  _    _             _                
-// | |  | |           | |               
-// | |  | | __ _ _   _| |__   __ _ _ __ 
-// | |/\| |/ _` | | | | '_ \ / _` | '__|
-// \  /\  / (_| | |_| | |_) | (_| | |   
-//  \/  \/ \__,_|\__, |_.__/ \__,_|_|   
-//               __/ |
 {
-  "include": ["~/.config/waybar/default-modules.jsonc"],
-  "layer": "top",
-  "position": "top",
-  "margin-top": 0,
-  "margin-left": 0,
-  "margin-right": 0,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-right": [
-    "battery",
-    "group/stats",
-    "group/connections",
-    "clock",
-  ]
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray"],
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": " {:%d/%m/%Y}",
+        "format": " {:%H:%M}"
+    },
+    "backlight": {
+        "scroll-step": 5,
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-time": "{H}h {M}min",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 30,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+        "full-at": 99,
+        "tooltip": true
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-muted": " {volume}%",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol",
+        "max-volume": 100
+    },
 }
